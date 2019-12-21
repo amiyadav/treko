@@ -1,0 +1,5 @@
+FROM java:8
+COPY ./target/treko-docker-1.0.0-SNAPSHOT.jar /usr/src/treko/
+WORKDIR /usr/src/treko
+EXPOSE 8080
+CMD ["java", "-jar", "treko-docker-1.0.0-SNAPSHOT.jar"]
